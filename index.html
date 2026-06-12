@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Tutor Marketplace</title>
+    <meta
+      name="description"
+      content="AI Tutor Marketplace connects students with subject-specialist AI tutors in mathematics, programming, biology, physics, and economics."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="AI Tutor Marketplace home">
+        <span class="brand-mark">A</span>
+        <span>AI Tutor Marketplace</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#tutors">Tutors</a>
+        <a href="#style-lab">Style lab</a>
+        <a href="#outcomes">Outcomes</a>
+      </nav>
+      <a class="nav-action" href="#style-lab">Find a tutor</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Subject-specialist AI tutors</p>
+          <h1 id="hero-title">AI Tutor Marketplace</h1>
+          <p class="hero-lede">
+            Match with an AI tutor built for the way you learn, from proof-driven math to
+            debug-first programming and real-world economics.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#style-lab">Start matching</a>
+            <a class="button button-secondary" href="#tutors">Browse tutors</a>
+          </div>
+        </div>
+        <div class="hero-stats" aria-label="Marketplace highlights">
+          <span><strong>5</strong> specialist subjects</span>
+          <span><strong>24/7</strong> study chat</span>
+          <span><strong>1:1</strong> adaptive guidance</span>
+        </div>
+      </section>
+
+      <section class="section section-intro" id="tutors" aria-labelledby="tutors-title">
+        <div class="section-heading">
+          <p class="eyebrow">Tutor catalog</p>
+          <h2 id="tutors-title">Choose the mind you want beside yours.</h2>
+          <p>
+            Each tutor is tuned to a subject and a teaching rhythm, so students can switch
+            from hints to diagrams to worked examples without losing momentum.
+          </p>
+        </div>
+
+        <div class="tutor-grid">
+          <article class="tutor-card tutor-math">
+            <div class="card-topline">
+              <span class="subject-chip">Mathematics</span>
+              <span class="avatar">M</span>
+            </div>
+            <h3>Proof Coach</h3>
+            <p>Socratic, patient, and precise. Turns problems into guided questions and patterns.</p>
+            <ul>
+              <li>Step hints before answers</li>
+              <li>Graph and equation intuition</li>
+              <li>Exam-style practice loops</li>
+            </ul>
+          </article>
+
+          <article class="tutor-card tutor-code">
+            <div class="card-topline">
+              <span class="subject-chip">Programming</span>
+              <span class="avatar">P</span>
+            </div>
+            <h3>Debug Partner</h3>
+            <p>Hands-on and direct. Reads errors, explains tradeoffs, and pairs on clean fixes.</p>
+            <ul>
+              <li>Trace-first debugging</li>
+              <li>Code reviews with examples</li>
+              <li>Project planning support</li>
+            </ul>
+          </article>
+
+          <article class="tutor-card tutor-bio">
+            <div class="card-topline">
+              <span class="subject-chip">Biology</span>
+              <span class="avatar">B</span>
+            </div>
+            <h3>Systems Guide</h3>
+            <p>Visual and story-based. Connects cells, organs, ecosystems, and vocabulary.</p>
+            <ul>
+              <li>Diagram-first explanations</li>
+              <li>Memory hooks for terms</li>
+              <li>Process comparisons</li>
+            </ul>
+          </article>
+
+          <article class="tutor-card tutor-physics">
+            <div class="card-topline">
+              <span class="subject-chip">Physics</span>
+              <span class="avatar">F</span>
+            </div>
+            <h3>Lab Mentor</h3>
+            <p>Conceptual and experimental. Builds intuition before formulas and unit work.</p>
+            <ul>
+              <li>Free-body reasoning</li>
+              <li>Simulation-style prompts</li>
+              <li>Formula checks and units</li>
+            </ul>
+          </article>
+
+          <article class="tutor-card tutor-econ">
+            <div class="card-topline">
+              <span class="subject-chip">Economics</span>
+              <span class="avatar">E</span>
+            </div>
+            <h3>Market Analyst</h3>
+            <p>Case-driven and practical. Uses everyday decisions to make models feel real.</p>
+            <ul>
+              <li>Incentive maps</li>
+              <li>Supply and demand drills</li>
+              <li>Policy tradeoff debates</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section style-lab" id="style-lab" aria-labelledby="style-title">
+        <div class="style-copy">
+          <p class="eyebrow">Style lab</p>
+          <h2 id="style-title">Preview a tutor's teaching voice.</h2>
+          <p>
+            Pick a subject and see how the same student question changes when the tutor's
+            style changes. The marketplace remembers what helps and brings that style forward.
+          </p>
+          <div class="selector" role="tablist" aria-label="Tutor styles">
+            <button class="selector-button is-active" type="button" role="tab" aria-selected="true" data-tutor="math">
+              Mathematics
+            </button>
+            <button class="selector-button" type="button" role="tab" aria-selected="false" data-tutor="programming">
+              Programming
+            </button>
+            <button class="selector-button" type="button" role="tab" aria-selected="false" data-tutor="biology">
+              Biology
+            </button>
+            <button class="selector-button" type="button" role="tab" aria-selected="false" data-tutor="physics">
+              Physics
+            </button>
+            <button class="selector-button" type="button" role="tab" aria-selected="false" data-tutor="economics">
+              Economics
+            </button>
+          </div>
+        </div>
+
+        <div class="chat-panel" aria-live="polite">
+          <div class="chat-header">
+            <span class="chat-avatar" id="chat-avatar">M</span>
+            <div>
+              <h3 id="chat-title">Proof Coach</h3>
+              <p id="chat-subtitle">Socratic proof-builder</p>
+            </div>
+          </div>
+          <div class="chat-stream">
+            <p class="bubble student">I understand the formula, but I freeze when the problem changes.</p>
+            <p class="bubble tutor" id="chat-response">
+              Good. Let's keep the formula closed for a moment. What quantity is changing,
+              what stays fixed, and what relationship connects them?
+            </p>
+          </div>
+          <div class="chat-footer">
+            <span id="chat-method">Guided questions, pattern spotting, then a worked example.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section outcomes" id="outcomes" aria-labelledby="outcomes-title">
+        <div class="section-heading">
+          <p class="eyebrow">Student outcomes</p>
+          <h2 id="outcomes-title">A marketplace built around learning momentum.</h2>
+        </div>
+        <div class="outcome-grid">
+          <article>
+            <span class="outcome-number">01</span>
+            <h3>Switch styles instantly</h3>
+            <p>Move from diagrams to drills to explanations without starting a new search.</p>
+          </article>
+          <article>
+            <span class="outcome-number">02</span>
+            <h3>Study with context</h3>
+            <p>Keep goals, weak spots, and recent assignments attached to each tutoring thread.</p>
+          </article>
+          <article>
+            <span class="outcome-number">03</span>
+            <h3>Learn by doing</h3>
+            <p>Every answer can turn into a practice prompt, checklist, quiz, or debugging trace.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>AI Tutor Marketplace</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
