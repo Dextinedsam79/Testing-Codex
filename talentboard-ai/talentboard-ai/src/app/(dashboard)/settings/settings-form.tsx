@@ -103,7 +103,7 @@ export function SettingsForm({ user, profile }: { user: User | null; profile: an
           </CardHeader>
           <CardContent>
             <div className="flex items-center gap-6">
-              <Avatar name={fullName || email} src={avatarUrl} size="xl" />
+              <Avatar name={fullName || email} src={avatarUrl || undefined} size="xl" />
               <div>
                 <input
                   type="file"

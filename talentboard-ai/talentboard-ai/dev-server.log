@@ -862,3 +862,157 @@ https://react.dev/link/hydration-mismatch
  GET /forgot-password 200 in 12.0s (next.js: 11.7s, proxy.ts: 8ms, application-code: 335ms)
  GET /forgot-password 200 in 210ms (next.js: 43ms, proxy.ts: 17ms, application-code: 150ms)
  GET /login 200 in 109ms (next.js: 8ms, proxy.ts: 10ms, application-code: 90ms)
+⨯ The file "./src\proxy.ts" must export a function, either as a default export or as a named "proxy" export.
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+○ Compiling proxy ...
+✓ Compiled in 35.1s
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+○ Compiling /_error ...
+✓ Finished writing to filesystem cache in 17.3s
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+○ Compiling /_not-found/page ...
+✓ Finished writing to filesystem cache in 11.1s
+ GET /settings 404 in 2.0min (next.js: -265364µs, proxy.ts: 113s, application-code: 9.0s)
+ GET /settings 404 in 101s (next.js: -56398µs, proxy.ts: 101s, application-code: 237ms)
+ GET /settings 404 in 103s (next.js: -51865µs, proxy.ts: 103s, application-code: 176ms)
+ GET /settings 404 in 101s (next.js: -7932170µs, proxy.ts: 101s, application-code: 8.2s)
+ GET /settings 404 in 100s (next.js: -5678981µs, proxy.ts: 90s, application-code: 14.8s)
+ GET /settings 404 in 102s (next.js: -108595µs, proxy.ts: 94s, application-code: 8.5s)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 9.0s (next.js: -75630µs, proxy.ts: 3.3s, application-code: 5.8s)
+ GET /settings 404 in 9.0s (next.js: -227492µs, proxy.ts: 3.5s, application-code: 5.7s)
+ GET /settings 404 in 9.0s (next.js: -66077µs, proxy.ts: 3.6s, application-code: 5.5s)
+ GET /settings 404 in 9.0s (next.js: -106564µs, proxy.ts: 3.7s, application-code: 5.4s)
+ GET /settings 404 in 9.0s (next.js: -5161928µs, proxy.ts: 8.9s, application-code: 5.3s)
+ GET /settings 404 in 9.0s (next.js: -98549µs, proxy.ts: 9.0s, application-code: 116ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 1220ms (next.js: -89225µs, proxy.ts: 229ms, application-code: 1079ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 1239ms (next.js: -335598µs, proxy.ts: 581ms, application-code: 994ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 1968ms (next.js: -295270µs, proxy.ts: 1723ms, application-code: 540ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 2.1s (next.js: -134177µs, proxy.ts: 1867ms, application-code: 381ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 2.1s (next.js: -98939µs, proxy.ts: 1874ms, application-code: 329ms)
+ GET /settings 404 in 2.1s (next.js: -113593µs, proxy.ts: 1976ms, application-code: 225ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 1312ms (next.js: -184149µs, proxy.ts: 1116ms, application-code: 380ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 2.9s (next.js: -1245658µs, proxy.ts: 2.1s, application-code: 1970ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 3.0s (next.js: -94806µs, proxy.ts: 2.8s, application-code: 351ms)
+ GET /settings 404 in 2.8s (next.js: -121867µs, proxy.ts: 2.6s, application-code: 307ms)
+ GET /settings 404 in 2.8s (next.js: -109395µs, proxy.ts: 2.7s, application-code: 182ms)
+ GET /settings 404 in 2.7s (next.js: -53364µs, proxy.ts: 2.6s, application-code: 74ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 1474ms (next.js: -179425µs, proxy.ts: 1178ms, application-code: 476ms)
+ GET /settings 404 in 1407ms (next.js: -97139µs, proxy.ts: 1214ms, application-code: 291ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 3.5s (next.js: -33456µs, proxy.ts: 2.9s, application-code: 597ms)
+ GET /settings 404 in 3.4s (next.js: -37150µs, proxy.ts: 3.0s, application-code: 432ms)
+ GET /settings 404 in 3.4s (next.js: -100593µs, proxy.ts: 3.4s, application-code: 174ms)
+ GET /settings 404 in 3.3s (next.js: -60633µs, proxy.ts: 3.3s, application-code: 68ms)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 4.6s (next.js: -101060µs, proxy.ts: 2.3s, application-code: 2.4s)
+ GET /settings 404 in 4.5s (next.js: -203466µs, proxy.ts: 2.4s, application-code: 2.3s)
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 5.2s (next.js: -116447µs, proxy.ts: 3.5s, application-code: 1770ms)
+ GET /settings 404 in 5.2s (next.js: -114814µs, proxy.ts: 3.6s, application-code: 1650ms)
+ GET /settings 404 in 5.2s (next.js: -414667µs, proxy.ts: 4.2s, application-code: 1405ms)
+ GET /settings 404 in 5.1s (next.js: -977245µs, proxy.ts: 5.1s, application-code: 986ms)
+ GET /settings 500 in 3.8s (next.js: -111803µs, proxy.ts: 2.2s, application-code: 1762ms)
+ GET /settings 404 in 3.8s (next.js: -32825µs, proxy.ts: 2.3s, application-code: 1552ms)
+✓ Finished filesystem cache database compaction in 39.8s
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 500 in 14.4s (next.js: -535992µs, proxy.ts: 7.9s, application-code: 7.0s)
+ GET /settings 500 in 14.4s (next.js: -699735µs, proxy.ts: 8.7s, application-code: 6.4s)
+ GET /settings 500 in 14.3s (next.js: -532475µs, proxy.ts: 9.4s, application-code: 5.5s)
+ GET /settings 500 in 14.4s (next.js: -2467923µs, proxy.ts: 11.9s, application-code: 5.0s)
+ GET /settings 500 in 14.4s (next.js: -581067µs, proxy.ts: 12.5s, application-code: 2.5s)
+ GET /settings 404 in 14.4s (next.js: -664174µs, proxy.ts: 13.7s, application-code: 1422ms)
+✓ Finished writing to filesystem cache in 11.9s
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+[browser] Uncaught Error: ./src/proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+
+⨯ [Error: The Proxy file "/proxy" must export a function named `proxy` or a default function.]
+ GET /settings 404 in 405ms (next.js: -44644µs, proxy.ts: 403ms, application-code: 47ms)
+[browser] Uncaught Error: ./src/proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+
