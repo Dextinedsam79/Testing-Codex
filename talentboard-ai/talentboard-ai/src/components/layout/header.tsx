@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { Bell, Menu, Search } from "lucide-react";
 import { Avatar } from "@/components/ui/avatar";
-import { mockUser, mockNotifications } from "@/lib/mock-data";
+import { mockNotifications } from "@/lib/mock-data";
+import type { User } from "@supabase/supabase-js";
 
 interface HeaderProps {
   onMenuClick: () => void;
+  user: User;
 }
 
-export function Header({ onMenuClick }: HeaderProps) {
+export function Header({ onMenuClick, user }: HeaderProps) {
   const unreadCount = mockNotifications.filter((n) => !n.isRead).length;
 
   return (
@@ -52,7 +54,7 @@ export function Header({ onMenuClick }: HeaderProps) {
 
         {/* Avatar */}
         <Link href="/settings" className="flex items-center gap-2">
-          <Avatar name={mockUser.fullName} size="sm" />
+          <Avatar name={user.user_metadata?.full_name || user.email} size="sm" />
         </Link>
       </div>
     </header>

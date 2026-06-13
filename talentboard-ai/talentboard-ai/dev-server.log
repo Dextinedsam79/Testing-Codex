@@ -417,3 +417,448 @@ https://react.dev/link/hydration-mismatch
 AI generation persistence failed: TypeError: fetch failed
  POST /api/ai/generate 200 in 19.8s (next.js: 6ms, proxy.ts: 1069ms, application-code: 18.7s)
  POST /api/ai/generate 200 in 18.4s (next.js: 6ms, proxy.ts: 1238ms, application-code: 17.2s)
+ GET /settings 200 in 5.7s (next.js: 1762ms, proxy.ts: 3.3s, application-code: 583ms)
+ GET /settings 200 in 1026ms (next.js: 37ms, proxy.ts: 779ms, application-code: 210ms)
+ GET /kanban 200 in 1383ms (next.js: 516ms, proxy.ts: 786ms, application-code: 82ms)
+ GET /analytics 200 in 3.1s (next.js: 283ms, proxy.ts: 1764ms, application-code: 1054ms)
+○ Compiling /analytics/insights ...
+ GET /dashboard 200 in 4.2s (next.js: 1898ms, proxy.ts: 361ms, application-code: 1924ms)
+ GET /analytics/insights 200 in 21.3s (next.js: 19.2s, proxy.ts: 659ms, application-code: 1419ms)
+ GET /applications 200 in 2.6s (next.js: -75846µs, proxy.ts: 1867ms, application-code: 777ms)
+✓ Finished writing to filesystem cache in 25.1s
+✓ Finished filesystem cache database compaction in 11.0s
+✓ Compiled in 119.8s
+✓ Finished filesystem cache database compaction in 22.0s
+✓ Finished writing to filesystem cache in 32.0s
+✓ Finished filesystem cache database compaction in 18.0s
+○ Compiling /applications ...
+ GET /applications 200 in 67s (next.js: 44s, proxy.ts: 9.7s, application-code: 13.4s)
+✓ Finished filesystem cache database compaction in 59s
+ GET /applications 200 in 1431ms (next.js: 124ms, proxy.ts: 810ms, application-code: 498ms)
+ GET / 200 in 2.3min (next.js: 24.1s, proxy.ts: 84s, application-code: 33.3s)
+[browser] Cannot render a sync or defer <script> outside the main document without knowing its order. Try adding async="" or moving it into the root <head> tag. 
+    at isHostHoistableType (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:12752:562)
+    at createFiberFromTypeAndProps (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3114:84)
+    at createFiberFromElement (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3178:16)
+    at reconcileChildFibersImpl (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4206:421)
+    at <unknown> (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4261:39)
+    at reconcileChildren (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:5898:51)
+    at updateFunctionComponent (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6086:9)
+    at beginWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6665:639)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:12752:562)
+[browser] In HTML, <script> cannot be a child of <html>.
+This will cause a hydration error.
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+>                       <html
+>                         lang="en"
+>                         className="inter_7b064e0d-module__MOT0tq__variable inter_tight_af706dec-module__FKVbRG__vari..."
+>                       >
+                          <Script id="suppress-e..." strategy="beforeInte...">
+>                           <script nonce={undefined} dangerouslySetInnerHTML={{__html:"(self.__ne..."}}>
+                          ...
+                  ...
+ 
+    at validateDOMNesting (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:1963:211)
+    at beginWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:104)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:1963:211)
+[browser] <html> cannot contain a nested <script>.
+See this log for the ancestor stack trace. 
+    at <unknown> (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:1965:21)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at validateDOMNesting (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:1964:178)
+    at beginWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:104)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:1965:21)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="inter_7b06...">
+                          <Script>
+                          <body
+                            className="min-h-full flex flex-col font-sans antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1302.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+[browser] Error restoring session i: Failed to connect to MetaMask
+    at Object.connect (chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/scripts/inpage.js:7:81161) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET /applications 200 in 1153ms (next.js: 13ms, proxy.ts: 663ms, application-code: 477ms)
+ GET /applications 200 in 561ms (next.js: 9ms, proxy.ts: 399ms, application-code: 153ms)
+ GET /applications 200 in 627ms (next.js: 12ms, proxy.ts: 277ms, application-code: 339ms)
+ GET /applications 200 in 747ms (next.js: 97ms, proxy.ts: 324ms, application-code: 327ms)
+ GET /applications 200 in 467ms (next.js: 11ms, proxy.ts: 275ms, application-code: 182ms)
+ GET /applications 200 in 708ms (next.js: 10ms, proxy.ts: 523ms, application-code: 174ms)
+ GET /applications 200 in 510ms (next.js: 16ms, proxy.ts: 243ms, application-code: 251ms)
+ GET /applications 200 in 522ms (next.js: 11ms, proxy.ts: 241ms, application-code: 269ms)
+ GET /applications 200 in 796ms (next.js: 56ms, proxy.ts: 263ms, application-code: 476ms)
+ GET /applications 200 in 1171ms (next.js: 37ms, proxy.ts: 605ms, application-code: 528ms)
+ GET /applications 200 in 812ms (next.js: 13ms, proxy.ts: 279ms, application-code: 520ms)
+ GET /applications 200 in 1056ms (next.js: 66ms, proxy.ts: 298ms, application-code: 692ms)
+ GET /applications 200 in 2.0s (next.js: 262ms, proxy.ts: 430ms, application-code: 1322ms)
+ GET /applications 200 in 1030ms (next.js: 40ms, proxy.ts: 237ms, application-code: 753ms)
+ GET /applications 200 in 675ms (next.js: 27ms, proxy.ts: 287ms, application-code: 361ms)
+ GET /applications 200 in 987ms (next.js: 33ms, proxy.ts: 300ms, application-code: 654ms)
+ GET /applications 200 in 611ms (next.js: 19ms, proxy.ts: 317ms, application-code: 274ms)
+ GET /applications 200 in 748ms (next.js: 112ms, proxy.ts: 288ms, application-code: 349ms)
+ GET /applications 200 in 2.4s (next.js: 11ms, proxy.ts: 671ms, application-code: 1698ms)
+ GET /applications 200 in 2.7s (next.js: 20ms, proxy.ts: 844ms, application-code: 1863ms)
+ GET /applications 200 in 1640ms (next.js: 306ms, proxy.ts: 487ms, application-code: 848ms)
+ GET /applications 200 in 1444ms (next.js: 37ms, proxy.ts: 370ms, application-code: 1038ms)
+ GET /applications 200 in 3.0s (next.js: 524ms, proxy.ts: 366ms, application-code: 2.1s)
+ GET /applications 200 in 4.0s (next.js: 114ms, proxy.ts: 1546ms, application-code: 2.3s)
+ GET /applications 200 in 2.6s (next.js: 141ms, proxy.ts: 602ms, application-code: 1893ms)
+ GET /applications 200 in 3.8s (next.js: 279ms, proxy.ts: 1764ms, application-code: 1761ms)
+ GET /applications 200 in 4.0s (next.js: 399ms, proxy.ts: 2.0s, application-code: 1647ms)
+ GET /applications 200 in 3.9s (next.js: 1091ms, proxy.ts: 1775ms, application-code: 984ms)
+ GET /applications 200 in 2.0s (next.js: 253ms, proxy.ts: 249ms, application-code: 1526ms)
+ GET /applications 200 in 1982ms (next.js: 56ms, proxy.ts: 614ms, application-code: 1313ms)
+ GET /applications 200 in 1995ms (next.js: 183ms, proxy.ts: 608ms, application-code: 1204ms)
+ GET /applications 200 in 1988ms (next.js: 383ms, proxy.ts: 597ms, application-code: 1008ms)
+ GET /applications 200 in 1891ms (next.js: 848ms, proxy.ts: 481ms, application-code: 563ms)
+ GET /applications 200 in 3.6s (next.js: 23ms, proxy.ts: 346ms, application-code: 3.3s)
+✓ Compiled in 9.6s
+ GET / 200 in 5.0s (next.js: 1692ms, proxy.ts: 1765ms, application-code: 1580ms)
+ GET / 200 in 11.0s (next.js: 88ms, proxy.ts: 600ms, application-code: 10.4s)
+ GET / 200 in 10.6s (next.js: 103ms, proxy.ts: 701ms, application-code: 9.8s)
+ GET / 200 in 9.2s (next.js: 843ms, proxy.ts: 2.3s, application-code: 6.0s)
+ GET / 200 in 9.0s (next.js: 1702ms, proxy.ts: 2.9s, application-code: 4.4s)
+ GET / 200 in 9.0s (next.js: 1604ms, proxy.ts: 4.4s, application-code: 2.9s)
+ GET / 200 in 9.0s (next.js: 979ms, proxy.ts: 4.4s, application-code: 3.6s)
+ GET / 200 in 3.0s (next.js: 7ms, proxy.ts: 2.1s, application-code: 851ms)
+ GET / 200 in 8.6s (next.js: 71ms, proxy.ts: 2.0s, application-code: 6.5s)
+ GET / 200 in 8.6s (next.js: 328ms, proxy.ts: 1999ms, application-code: 6.2s)
+ GET / 200 in 8.6s (next.js: 881ms, proxy.ts: 1983ms, application-code: 5.7s)
+ GET / 200 in 8.6s (next.js: 1207ms, proxy.ts: 2.0s, application-code: 5.4s)
+ GET / 200 in 8.6s (next.js: 1462ms, proxy.ts: 1961ms, application-code: 5.2s)
+ GET / 200 in 6.8s (next.js: 147ms, proxy.ts: 4.7s, application-code: 1998ms)
+ GET / 200 in 1843ms (next.js: 133ms, proxy.ts: 292ms, application-code: 1418ms)
+ GET / 200 in 1906ms (next.js: 79ms, proxy.ts: 1084ms, application-code: 743ms)
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+    at completeWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6945:102)
+    at runWithFiberInDEV (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at completeUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopSync (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:186)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6945:102)
+✓ Compiled in 45.2s
+✓ Finished writing to filesystem cache in 30.0s
+ GET / 200 in 50s (next.js: 5.7s, proxy.ts: 1644ms, application-code: 42s)
+ GET / 200 in 5.7s (next.js: 658ms, proxy.ts: 1862ms, application-code: 3.1s)
+ GET / 200 in 5.7s (next.js: 228ms, proxy.ts: 2.9s, application-code: 2.6s)
+ GET / 200 in 5.7s (next.js: 523ms, proxy.ts: 2.9s, application-code: 2.3s)
+ GET / 200 in 5.7s (next.js: 867ms, proxy.ts: 2.8s, application-code: 1962ms)
+ GET / 200 in 5.7s (next.js: 1018ms, proxy.ts: 2.8s, application-code: 1820ms)
+ GET / 200 in 4.5s (next.js: 714ms, proxy.ts: 1717ms, application-code: 2.1s)
+ GET / 200 in 4.1s (next.js: 38ms, proxy.ts: 281ms, application-code: 3.8s)
+ GET / 200 in 4.1s (next.js: 234ms, proxy.ts: 670ms, application-code: 3.2s)
+ GET / 200 in 4.1s (next.js: 970ms, proxy.ts: 668ms, application-code: 2.4s)
+ GET / 200 in 4.1s (next.js: 586ms, proxy.ts: 666ms, application-code: 2.8s)
+ GET / 200 in 4.1s (next.js: 1126ms, proxy.ts: 675ms, application-code: 2.3s)
+ GET / 200 in 4.1s (next.js: 383ms, proxy.ts: 666ms, application-code: 3.0s)
+✓ Finished filesystem cache database compaction in 23.6s
+ GET / 200 in 3.1s (next.js: 14ms, proxy.ts: 328ms, application-code: 2.8s)
+ GET / 200 in 3.2s (next.js: 410ms, proxy.ts: 329ms, application-code: 2.4s)
+ GET / 200 in 3.2s (next.js: 192ms, proxy.ts: 1076ms, application-code: 1965ms)
+ GET / 200 in 3.2s (next.js: 330ms, proxy.ts: 1077ms, application-code: 1822ms)
+ GET / 200 in 3.1s (next.js: 571ms, proxy.ts: 950ms, application-code: 1571ms)
+ GET / 200 in 3.2s (next.js: 456ms, proxy.ts: 1072ms, application-code: 1704ms)
+ GET / 200 in 3.8s (next.js: 41ms, proxy.ts: 273ms, application-code: 3.5s)
+ GET / 200 in 3.8s (next.js: 355ms, proxy.ts: 260ms, application-code: 3.1s)
+ GET / 200 in 3.8s (next.js: 639ms, proxy.ts: 772ms, application-code: 2.4s)
+ GET / 200 in 3.8s (next.js: 801ms, proxy.ts: 793ms, application-code: 2.2s)
+ GET / 200 in 3.8s (next.js: 968ms, proxy.ts: 788ms, application-code: 2.0s)
+ GET / 200 in 266ms (next.js: 180ms, proxy.ts: 54ms, application-code: 33ms)
+ GET / 200 in 3.4s (next.js: 36ms, proxy.ts: 1943ms, application-code: 1419ms)
+ GET / 200 in 3.6s (next.js: 55ms, proxy.ts: 352ms, application-code: 3.2s)
+ GET / 200 in 3.5s (next.js: 68ms, proxy.ts: 947ms, application-code: 2.5s)
+ GET / 200 in 3.5s (next.js: 272ms, proxy.ts: 946ms, application-code: 2.3s)
+ GET / 200 in 3.5s (next.js: 421ms, proxy.ts: 949ms, application-code: 2.1s)
+ GET / 200 in 3.3s (next.js: 761ms, proxy.ts: 754ms, application-code: 1808ms)
+ GET / 200 in 6.8s (next.js: 403ms, proxy.ts: 1805ms, application-code: 4.6s)
+ GET / 200 in 4.8s (next.js: 225ms, proxy.ts: 322ms, application-code: 4.3s)
+ GET / 200 in 4.9s (next.js: 997ms, proxy.ts: 439ms, application-code: 3.4s)
+ GET / 200 in 4.9s (next.js: 1070ms, proxy.ts: 956ms, application-code: 2.8s)
+ GET / 200 in 4.9s (next.js: 1304ms, proxy.ts: 957ms, application-code: 2.6s)
+ GET / 200 in 5.0s (next.js: 735ms, proxy.ts: 2.4s, application-code: 1793ms)
+ GET /login?redirect=%2Fdashboard 200 in 3.1s (next.js: 2.1s, proxy.ts: 106ms, application-code: 834ms)
+ GET / 200 in 128ms (next.js: 30ms, proxy.ts: 27ms, application-code: 70ms)
+ GET / 200 in 5.2s (next.js: 323ms, proxy.ts: 282ms, application-code: 4.6s)
+ GET / 200 in 5.7s (next.js: 15ms, proxy.ts: 761ms, application-code: 4.9s)
+ GET / 200 in 6.2s (next.js: 94ms, proxy.ts: 1697ms, application-code: 4.4s)
+ GET / 200 in 6.1s (next.js: 623ms, proxy.ts: 1630ms, application-code: 3.9s)
+ GET / 200 in 6.1s (next.js: 464ms, proxy.ts: 1568ms, application-code: 4.0s)
+ GET / 200 in 1129ms (next.js: 67ms, proxy.ts: 28ms, application-code: 1034ms)
+ GET /login?redirect=%2Fdashboard 200 in 3.3s (next.js: 602ms, proxy.ts: 97ms, application-code: 2.6s)
+ GET / 200 in 3.9s (next.js: 157ms, proxy.ts: 46ms, application-code: 3.7s)
+ GET / 200 in 3.4s (next.js: 86ms, proxy.ts: 21ms, application-code: 3.3s)
+ GET / 200 in 2.6s (next.js: 162ms, proxy.ts: 26ms, application-code: 2.4s)
+ GET / 200 in 2.6s (next.js: 403ms, proxy.ts: 22ms, application-code: 2.2s)
+ GET / 200 in 2.6s (next.js: 563ms, proxy.ts: 21ms, application-code: 1991ms)
+ GET / 200 in 3.1s (next.js: 81ms, proxy.ts: 16ms, application-code: 3.0s)
+ GET / 200 in 2.5s (next.js: 75ms, proxy.ts: 18ms, application-code: 2.4s)
+ GET / 200 in 2.8s (next.js: 615ms, proxy.ts: 111ms, application-code: 2.1s)
+ GET / 200 in 2.9s (next.js: 838ms, proxy.ts: 33ms, application-code: 1988ms)
+ GET / 200 in 3.0s (next.js: 961ms, proxy.ts: 437ms, application-code: 1602ms)
+ GET / 200 in 3.0s (next.js: 1084ms, proxy.ts: 447ms, application-code: 1466ms)
+ GET /login?redirect=%2Fdashboard 200 in 1376ms (next.js: 553ms, proxy.ts: 597ms, application-code: 226ms)
+ GET / 200 in 2.1s (next.js: 129ms, proxy.ts: 32ms, application-code: 1906ms)
+ GET / 200 in 2.0s (next.js: 603ms, proxy.ts: 30ms, application-code: 1380ms)
+ GET / 200 in 2.0s (next.js: 714ms, proxy.ts: 73ms, application-code: 1217ms)
+ GET /register 200 in 3.0s (next.js: 1704ms, proxy.ts: 11ms, application-code: 1272ms)
+ GET /login 200 in 1118ms (next.js: 117ms, proxy.ts: 156ms, application-code: 846ms)
+ GET /register 200 in 695ms (next.js: 83ms, proxy.ts: 70ms, application-code: 542ms)
+✓ Finished filesystem cache database compaction in 22.3s
+ GET /login 200 in 100ms (next.js: 10ms, proxy.ts: 8ms, application-code: 82ms)
+ GET /dashboard 200 in 6.2s (next.js: 990ms, proxy.ts: 593ms, application-code: 4.6s)
+ GET /dashboard 200 in 3.7s (next.js: 41ms, proxy.ts: 1692ms, application-code: 2.0s)
+ GET /settings 200 in 1887ms (next.js: 931ms, proxy.ts: 730ms, application-code: 226ms)
+ GET /dashboard 200 in 2.6s (next.js: 226ms, proxy.ts: 698ms, application-code: 1673ms)
+ GET /dashboard 200 in 2.1s (next.js: 21ms, proxy.ts: 588ms, application-code: 1510ms)
+ GET /dashboard 200 in 2.2s (next.js: 157ms, proxy.ts: 677ms, application-code: 1411ms)
+ GET /dashboard 200 in 1853ms (next.js: 232ms, proxy.ts: 413ms, application-code: 1208ms)
+ GET /dashboard 200 in 1452ms (next.js: 136ms, proxy.ts: 335ms, application-code: 981ms)
+ GET /dashboard 200 in 1330ms (next.js: 25ms, proxy.ts: 319ms, application-code: 985ms)
+ GET /dashboard 200 in 1964ms (next.js: 9ms, proxy.ts: 222ms, application-code: 1733ms)
+ GET /dashboard 200 in 636ms (next.js: 19ms, proxy.ts: 587ms, application-code: 29ms)
+ GET /dashboard 200 in 2.6s (next.js: 12ms, proxy.ts: 230ms, application-code: 2.3s)
+ GET / 200 in 2.3s (next.js: 13ms, proxy.ts: 606ms, application-code: 1729ms)
+[browser] Error restoring session i: Failed to connect to MetaMask
+    at Object.connect (chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/scripts/inpage.js:7:81161) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+✓ Finished writing to filesystem cache in 10.3s
+✓ Compiled in 27.4s
+✓ Finished writing to filesystem cache in 60s
+ GET / 200 in 74s (next.js: 5.7s, proxy.ts: 60s, application-code: 8.1s)
+ GET / 200 in 19.8s (next.js: 6.8s, proxy.ts: 6.9s, application-code: 6.1s)
+ GET / 200 in 19.9s (next.js: 7.4s, proxy.ts: 7.0s, application-code: 5.5s)
+ GET / 200 in 19.7s (next.js: 8.7s, proxy.ts: 6.8s, application-code: 4.2s)
+ GET / 200 in 20.1s (next.js: 10.0s, proxy.ts: 7.2s, application-code: 2.9s)
+ GET / 200 in 20.2s (next.js: 11.4s, proxy.ts: 7.3s, application-code: 1471ms)
+ GET / 200 in 10.5s (next.js: 138ms, proxy.ts: 1563ms, application-code: 8.8s)
+ GET / 200 in 10.5s (next.js: 6.5s, proxy.ts: 1542ms, application-code: 2.4s)
+ GET / 200 in 9.6s (next.js: 8.0s, proxy.ts: 773ms, application-code: 835ms)
+ GET / 200 in 9.6s (next.js: 346ms, proxy.ts: 7.9s, application-code: 1396ms)
+✓ Finished filesystem cache database compaction in 21.0s
+✓ Finished filesystem cache database compaction in 22.2s
+ GET /dashboard 200 in 6.1s (next.js: 1645ms, proxy.ts: 267ms, application-code: 4.2s)
+ GET / 200 in 258ms (next.js: 9ms, proxy.ts: 10ms, application-code: 239ms)
+ GET / 200 in 265ms (next.js: 10ms, proxy.ts: 11ms, application-code: 245ms)
+ GET /login 200 in 1891ms (next.js: 629ms, proxy.ts: 1143ms, application-code: 119ms)
+ GET /login 200 in 166ms (next.js: 15ms, proxy.ts: 16ms, application-code: 135ms)
+ GET /register 200 in 213ms (next.js: 81ms, proxy.ts: 7ms, application-code: 125ms)
+ GET /login 200 in 574ms (next.js: 34ms, proxy.ts: 11ms, application-code: 530ms)
+ GET /dashboard 200 in 2.3s (next.js: 21ms, proxy.ts: 732ms, application-code: 1578ms)
+ GET /dashboard 200 in 1735ms (next.js: 12ms, proxy.ts: 703ms, application-code: 1020ms)
+ GET /settings 200 in 1161ms (next.js: 117ms, proxy.ts: 902ms, application-code: 142ms)
+✓ Compiled in 3.4s
+ GET /settings 200 in 3.8s (next.js: 747ms, proxy.ts: 2.3s, application-code: 783ms)
+ GET /settings 200 in 928ms (next.js: 12ms, proxy.ts: 595ms, application-code: 320ms)
+ GET /settings 200 in 627ms (next.js: 13ms, proxy.ts: 268ms, application-code: 346ms)
+ GET /settings 200 in 756ms (next.js: 17ms, proxy.ts: 256ms, application-code: 482ms)
+ GET /settings 200 in 919ms (next.js: 26ms, proxy.ts: 443ms, application-code: 451ms)
+✓ Compiled in 3.2s
+ GET /settings 200 in 2.1s (next.js: 920ms, proxy.ts: 740ms, application-code: 450ms)
+ GET /settings 200 in 1474ms (next.js: 150ms, proxy.ts: 1066ms, application-code: 258ms)
+ GET /settings 200 in 716ms (next.js: 25ms, proxy.ts: 284ms, application-code: 407ms)
+ GET /settings 200 in 1138ms (next.js: 42ms, proxy.ts: 610ms, application-code: 485ms)
+ GET / 200 in 1933ms (next.js: 1246ms, proxy.ts: 22ms, application-code: 665ms)
+ GET / 200 in 478ms (next.js: 16ms, proxy.ts: 14ms, application-code: 448ms)
+ GET /login 200 in 1125ms (next.js: 735ms, proxy.ts: 9ms, application-code: 380ms)
+ GET /dashboard 200 in 7.1s (next.js: 3.5s, proxy.ts: 910ms, application-code: 2.6s)
+ GET /dashboard 200 in 2.5s (next.js: 16ms, proxy.ts: 1044ms, application-code: 1395ms)
+ GET /settings 200 in 1069ms (next.js: 15ms, proxy.ts: 706ms, application-code: 348ms)
+ GET / 200 in 409ms (next.js: 211ms, proxy.ts: 13ms, application-code: 186ms)
+ GET / 200 in 399ms (next.js: 20ms, proxy.ts: 12ms, application-code: 367ms)
+ GET /register 200 in 755ms (next.js: 580ms, proxy.ts: 9ms, application-code: 167ms)
+ GET /login 200 in 94ms (next.js: 6ms, proxy.ts: 7ms, application-code: 82ms)
+ GET /dashboard 200 in 2.9s (next.js: 19ms, proxy.ts: 892ms, application-code: 1944ms)
+ GET /dashboard 200 in 2.9s (next.js: 190ms, proxy.ts: 922ms, application-code: 1770ms)
+✓ Compiled in 767ms
+ GET /dashboard 200 in 5.2s (next.js: 648ms, proxy.ts: 1841ms, application-code: 2.7s)
+ GET /dashboard 200 in 3.2s (next.js: 14ms, proxy.ts: 2.3s, application-code: 910ms)
+✓ Compiled in 5.3s
+ GET /dashboard 200 in 4.3s (next.js: 1847ms, proxy.ts: 996ms, application-code: 1466ms)
+✓ Compiled in 1721ms
+ GET /dashboard 200 in 4.6s (next.js: 1260ms, proxy.ts: 785ms, application-code: 2.5s)
+✓ Compiled in 1997ms
+ GET /dashboard 200 in 4.8s (next.js: 875ms, proxy.ts: 852ms, application-code: 3.0s)
+ GET /dashboard 200 in 10.5s (next.js: 152ms, proxy.ts: 1576ms, application-code: 8.8s)
+[browser] Error restoring session i: Failed to connect to MetaMask
+    at Object.connect (chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/scripts/inpage.js:7:81161) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET /settings 200 in 3.0s (next.js: 1402ms, proxy.ts: 938ms, application-code: 704ms)
+[browser] Error uploading avatar: StorageApiError: The object exceeded the maximum allowed size
+    at <unknown> (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_1mzf9q1._.js:8603:20) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/_0azv8ip._.js:404:21)
+ GET /notifications 200 in 2.1s (next.js: 1116ms, proxy.ts: 743ms, application-code: 224ms)
+ GET /settings 200 in 814ms (next.js: 9ms, proxy.ts: 245ms, application-code: 560ms)
+ GET /settings 200 in 2.0s (next.js: 23ms, proxy.ts: 591ms, application-code: 1406ms)
+[browser] Error restoring session i: Failed to connect to MetaMask
+    at Object.connect (chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/scripts/inpage.js:7:81161) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET / 200 in 984ms (next.js: 185ms, proxy.ts: 17ms, application-code: 782ms)
+ GET / 200 in 1630ms (next.js: 297ms, proxy.ts: 28ms, application-code: 1305ms)
+ GET /register 200 in 927ms (next.js: 607ms, proxy.ts: 10ms, application-code: 310ms)
+✓ Compiled in 1803ms
+ GET /register 200 in 911ms (next.js: 468ms, proxy.ts: 140ms, application-code: 304ms)
+✓ Compiled in 34.6s
+✓ Finished writing to filesystem cache in 15.9s
+ GET /register 200 in 7.0s (next.js: 1785ms, proxy.ts: 3.8s, application-code: 1431ms)
+ GET /register 200 in 4.9s (next.js: 91ms, proxy.ts: 92ms, application-code: 4.7s)
+ GET /register 200 in 5.2s (next.js: 1017ms, proxy.ts: 69ms, application-code: 4.1s)
+ GET /register 200 in 2.8s (next.js: 242ms, proxy.ts: 35ms, application-code: 2.5s)
+ GET /register 200 in 1176ms (next.js: 201ms, proxy.ts: 35ms, application-code: 941ms)
+ GET /register 200 in 3.1s (next.js: 15ms, proxy.ts: 19ms, application-code: 3.1s)
+[browser] Error restoring session i: Failed to connect to MetaMask
+    at Object.connect (chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/scripts/inpage.js:7:81161) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET /login 200 in 563ms (next.js: 391ms, proxy.ts: 6ms, application-code: 166ms)
+ GET /dashboard 200 in 3.3s (next.js: 499ms, proxy.ts: 994ms, application-code: 1791ms)
+ GET /dashboard 200 in 1938ms (next.js: 15ms, proxy.ts: 675ms, application-code: 1248ms)
+ GET /settings 200 in 1906ms (next.js: 543ms, proxy.ts: 642ms, application-code: 720ms)
+[browser] Error uploading avatar: StorageApiError: The object exceeded the maximum allowed size
+    at <unknown> (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_2090368._.js:8193:20) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/_0azv8ip._.js:404:21)
+ GET /settings 200 in 2.4s (next.js: 710ms, proxy.ts: 960ms, application-code: 769ms)
+✓ Compiled in 1010ms
+ GET /settings 200 in 2.7s (next.js: 571ms, proxy.ts: 415ms, application-code: 1707ms)
+ GET /settings 200 in 2.3s (next.js: 598ms, proxy.ts: 1233ms, application-code: 509ms)
+ GET /settings 200 in 780ms (next.js: 27ms, proxy.ts: 371ms, application-code: 382ms)
+ GET /settings 200 in 653ms (next.js: 12ms, proxy.ts: 285ms, application-code: 356ms)
+ GET /settings 200 in 904ms (next.js: 42ms, proxy.ts: 305ms, application-code: 558ms)
+ GET /settings 200 in 626ms (next.js: 8ms, proxy.ts: 243ms, application-code: 375ms)
+ GET /settings 200 in 615ms (next.js: 32ms, proxy.ts: 314ms, application-code: 269ms)
+ GET /settings 200 in 461ms (next.js: 8ms, proxy.ts: 235ms, application-code: 217ms)
+ GET /settings 200 in 436ms (next.js: 8ms, proxy.ts: 223ms, application-code: 205ms)
+ GET /settings 200 in 456ms (next.js: 8ms, proxy.ts: 245ms, application-code: 203ms)
+ GET /settings 200 in 409ms (next.js: 7ms, proxy.ts: 239ms, application-code: 163ms)
+ GET /settings 200 in 502ms (next.js: 8ms, proxy.ts: 285ms, application-code: 208ms)
+ GET /settings 200 in 469ms (next.js: 12ms, proxy.ts: 249ms, application-code: 209ms)
+ GET /settings 200 in 432ms (next.js: 9ms, proxy.ts: 245ms, application-code: 178ms)
+ GET /settings 200 in 456ms (next.js: 11ms, proxy.ts: 276ms, application-code: 169ms)
+ GET /settings 200 in 453ms (next.js: 8ms, proxy.ts: 266ms, application-code: 178ms)
+ GET /settings 200 in 436ms (next.js: 8ms, proxy.ts: 267ms, application-code: 161ms)
+ GET /settings 200 in 498ms (next.js: 11ms, proxy.ts: 262ms, application-code: 225ms)
+ GET /settings 200 in 410ms (next.js: 7ms, proxy.ts: 229ms, application-code: 173ms)
+ GET /settings 200 in 430ms (next.js: 9ms, proxy.ts: 267ms, application-code: 154ms)
+ GET /settings 200 in 430ms (next.js: 7ms, proxy.ts: 243ms, application-code: 181ms)
+ GET /settings 200 in 481ms (next.js: 9ms, proxy.ts: 275ms, application-code: 197ms)
+ GET /settings 200 in 423ms (next.js: 11ms, proxy.ts: 230ms, application-code: 182ms)
+ GET /settings 200 in 414ms (next.js: 8ms, proxy.ts: 238ms, application-code: 168ms)
+ GET /settings 200 in 771ms (next.js: 7ms, proxy.ts: 333ms, application-code: 431ms)
+ GET /settings 200 in 510ms (next.js: 11ms, proxy.ts: 285ms, application-code: 214ms)
+ GET /settings 200 in 3.5s (next.js: 2.8s, proxy.ts: 233ms, application-code: 404ms)
+ GET /settings 200 in 2.4s (next.js: 16ms, proxy.ts: 268ms, application-code: 2.1s)
+ GET /settings 200 in 1240ms (next.js: 12ms, proxy.ts: 735ms, application-code: 492ms)
+ GET /settings 200 in 1305ms (next.js: 8ms, proxy.ts: 228ms, application-code: 1069ms)
+ GET /settings 200 in 2.4s (next.js: 34ms, proxy.ts: 1529ms, application-code: 847ms)
+ GET /settings 200 in 2.5s (next.js: 275ms, proxy.ts: 1618ms, application-code: 621ms)
+ GET /settings 200 in 2.5s (next.js: 145ms, proxy.ts: 1632ms, application-code: 746ms)
+ GET /settings 200 in 2.5s (next.js: 374ms, proxy.ts: 1620ms, application-code: 530ms)
+ GET /settings 200 in 2.6s (next.js: 9ms, proxy.ts: 1424ms, application-code: 1162ms)
+ GET /settings 200 in 1372ms (next.js: 122ms, proxy.ts: 414ms, application-code: 835ms)
+ GET /settings 200 in 1333ms (next.js: 27ms, proxy.ts: 376ms, application-code: 929ms)
+ GET /settings 200 in 1311ms (next.js: 312ms, proxy.ts: 353ms, application-code: 646ms)
+ GET /settings 200 in 1336ms (next.js: 209ms, proxy.ts: 374ms, application-code: 753ms)
+ GET /settings 200 in 1370ms (next.js: 742ms, proxy.ts: 337ms, application-code: 291ms)
+ GET /settings 200 in 1372ms (next.js: 8ms, proxy.ts: 227ms, application-code: 1136ms)
+ GET /settings 200 in 1354ms (next.js: 32ms, proxy.ts: 369ms, application-code: 953ms)
+ GET /settings 200 in 1355ms (next.js: 209ms, proxy.ts: 368ms, application-code: 778ms)
+ GET /settings 200 in 1369ms (next.js: 318ms, proxy.ts: 366ms, application-code: 685ms)
+ GET /settings 200 in 1321ms (next.js: 396ms, proxy.ts: 322ms, application-code: 603ms)
+ GET /settings 200 in 1442ms (next.js: 501ms, proxy.ts: 381ms, application-code: 559ms)
+ GET /settings 200 in 475ms (next.js: 30ms, proxy.ts: 229ms, application-code: 216ms)
+ GET /settings 200 in 1487ms (next.js: 85ms, proxy.ts: 346ms, application-code: 1056ms)
+ GET /settings 200 in 1444ms (next.js: 163ms, proxy.ts: 304ms, application-code: 977ms)
+ GET /settings 200 in 1429ms (next.js: 253ms, proxy.ts: 299ms, application-code: 878ms)
+ GET /settings 200 in 1499ms (next.js: 355ms, proxy.ts: 351ms, application-code: 793ms)
+ GET /settings 200 in 1531ms (next.js: 438ms, proxy.ts: 376ms, application-code: 717ms)
+ GET /settings 200 in 1248ms (next.js: 31ms, proxy.ts: 914ms, application-code: 302ms)
+ GET /settings 200 in 1314ms (next.js: 10ms, proxy.ts: 242ms, application-code: 1063ms)
+ GET /settings 200 in 1330ms (next.js: 35ms, proxy.ts: 402ms, application-code: 893ms)
+ GET /settings 200 in 1217ms (next.js: 110ms, proxy.ts: 294ms, application-code: 813ms)
+ GET /settings 200 in 1337ms (next.js: 202ms, proxy.ts: 396ms, application-code: 740ms)
+ GET /settings 200 in 1343ms (next.js: 486ms, proxy.ts: 397ms, application-code: 460ms)
+ GET /settings 200 in 1352ms (next.js: 574ms, proxy.ts: 409ms, application-code: 369ms)
+ GET /settings 200 in 405ms (next.js: 7ms, proxy.ts: 244ms, application-code: 154ms)
+ GET /applications 200 in 6.5s (next.js: 2.9s, proxy.ts: 851ms, application-code: 2.8s)
+[browser] Error restoring session i: Failed to connect to MetaMask
+    at Object.connect (chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/scripts/inpage.js:7:81161) (file://C:/Users/USER/Documents/Testing Codex/talentboard-ai/talentboard-ai/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET /settings 200 in 2.1s (next.js: 12ms, proxy.ts: 589ms, application-code: 1459ms)
+ GET / 200 in 2.0s (next.js: 1545ms, proxy.ts: 29ms, application-code: 450ms)
+ GET / 200 in 501ms (next.js: 14ms, proxy.ts: 76ms, application-code: 412ms)
+ GET /login 200 in 677ms (next.js: 440ms, proxy.ts: 5ms, application-code: 233ms)
+○ Compiling /forgot-password ...
+ GET /forgot-password 200 in 12.0s (next.js: 11.7s, proxy.ts: 8ms, application-code: 335ms)
+ GET /forgot-password 200 in 210ms (next.js: 43ms, proxy.ts: 17ms, application-code: 150ms)
+ GET /login 200 in 109ms (next.js: 8ms, proxy.ts: 10ms, application-code: 90ms)

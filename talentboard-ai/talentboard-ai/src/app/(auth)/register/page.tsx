@@ -57,7 +57,8 @@ export default function RegisterPage() {
       return;
     }
 
-    setMessage("Check your email to confirm your account, then sign in.");
+    event.currentTarget.reset();
+    router.push(`/login?message=${encodeURIComponent("Check your email to confirm your account, then sign in.")}`);
   }
 
   async function handleGoogleSignIn() {

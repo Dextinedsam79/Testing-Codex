@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MARKETING_NAV_ITEMS } from "@/lib/constants";
+import { createClient } from "@/lib/supabase/server";
+import { MarketingHeaderAuth } from "@/components/layout/marketing-header-auth";
 
 const features = [
   {
@@ -92,7 +94,10 @@ const steps = [
   { step: "04", title: "Land Your Dream Job", description: "Analyze your progress and convert more applications into offers." },
 ];
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
   return (
     <div className="flex flex-col min-h-screen bg-card">
       {/* ---- Navbar ---- */}
@@ -120,14 +125,7 @@ export default function LandingPage() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="/login">
-              <Button variant="ghost" size="sm">
-                Log in
-              </Button>
-            </Link>
-            <Link href="/register">
-              <Button size="sm">Get Started Free</Button>
-            </Link>
+            <MarketingHeaderAuth user={user} />
           </div>
         </div>
       </header>

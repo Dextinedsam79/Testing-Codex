@@ -30,55 +30,60 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${interTight.variable} h-full`}
+      suppressHydrationWarning
     >
-      <Script id="suppress-extension-runtime-errors" strategy="beforeInteractive">
-        {`
-          (() => {
-            const extensionErrorPatterns = [
-              "MetaMask",
-              "Failed to connect to MetaMask",
-              "MetaMask extension not found",
-              "chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"
-            ];
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (() => {
+                const extensionErrorPatterns = [
+                  "MetaMask",
+                  "Failed to connect to MetaMask",
+                  "MetaMask extension not found",
+                  "chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"
+                ];
 
-            const isExtensionNoise = (value) => {
-              const text = String(
-                value?.message ||
-                value?.reason?.message ||
-                value?.stack ||
-                value?.reason ||
-                value ||
-                ""
-              );
+                const isExtensionNoise = (value) => {
+                  const text = String(
+                    value?.message ||
+                    value?.reason?.message ||
+                    value?.stack ||
+                    value?.reason ||
+                    value ||
+                    ""
+                  );
 
-              return extensionErrorPatterns.some((pattern) => text.includes(pattern));
-            };
+                  return extensionErrorPatterns.some((pattern) => text.includes(pattern));
+                };
 
-            window.addEventListener(
-              "error",
-              (event) => {
-                if (isExtensionNoise(event.error) || isExtensionNoise(event.message) || isExtensionNoise(event.filename)) {
-                  event.preventDefault();
-                  event.stopImmediatePropagation();
-                }
-              },
-              true
-            );
+                window.addEventListener(
+                  "error",
+                  (event) => {
+                    if (isExtensionNoise(event.error) || isExtensionNoise(event.message) || isExtensionNoise(event.filename)) {
+                      event.preventDefault();
+                      event.stopImmediatePropagation();
+                    }
+                  },
+                  true
+                );
 
-            window.addEventListener(
-              "unhandledrejection",
-              (event) => {
-                if (isExtensionNoise(event.reason)) {
-                  event.preventDefault();
-                  event.stopImmediatePropagation();
-                }
-              },
-              true
-            );
-          })();
-        `}
-      </Script>
-      <body className="min-h-full flex flex-col font-sans antialiased">
+                window.addEventListener(
+                  "unhandledrejection",
+                  (event) => {
+                    if (isExtensionNoise(event.reason)) {
+                      event.preventDefault();
+                      event.stopImmediatePropagation();
+                    }
+                  },
+                  true
+                );
+              })();
+            `
+          }}
+        />
+      </head>
+      <body className="min-h-full flex flex-col font-sans antialiased" suppressHydrationWarning>
         {children}
       </body>
     </html>

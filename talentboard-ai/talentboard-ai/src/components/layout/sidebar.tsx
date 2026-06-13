@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
 import { DASHBOARD_NAV_ITEMS } from "@/lib/constants";
+import { signOut } from "@/lib/supabase/auth";
 import {
   LayoutDashboard,
   ClipboardList,
@@ -17,7 +19,6 @@ import {
   X,
 } from "lucide-react";
 import { Avatar } from "@/components/ui/avatar";
-import { mockUser } from "@/lib/mock-data";
 
 const iconMap: Record<string, React.ElementType> = {
   LayoutDashboard,
@@ -33,10 +34,18 @@ const iconMap: Record<string, React.ElementType> = {
 interface SidebarProps {
   open: boolean;
   onClose: () => void;
+  user: User;
 }
 
-export function Sidebar({ open, onClose }: SidebarProps) {
+export function Sidebar({ open, onClose, user }: SidebarProps) {
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleSignOut = async () => {
+    await signOut();
+    router.push("/");
+    router.refresh();
+  };
 
   return (
     <>
@@ -104,24 +113,25 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         </nav>
 
         {/* User section */}
-        <div className="border-t border-border p-3">
+        <div className="border-t border-border p-3 flex flex-col gap-1">
           <div className="flex items-center gap-3 rounded-lg px-3 py-2">
-            <Avatar name={mockUser.fullName} size="sm" />
+            <Avatar name={user.user_metadata?.full_name || user.email} size="sm" />
             <div className="flex-1 min-w-0">
               <p className="truncate text-sm font-medium text-text">
-                {mockUser.fullName}
+                {user.user_metadata?.full_name || "User"}
               </p>
               <p className="truncate text-xs text-text-muted">
-                {mockUser.email}
+                {user.email}
               </p>
             </div>
-            <button
-              className="rounded-lg p-1.5 text-text-muted hover:bg-surface-dim hover:text-text"
-              aria-label="Sign out"
-            >
-              <LogOut size={16} />
-            </button>
           </div>
+          <button
+            onClick={handleSignOut}
+            className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-surface-dim hover:text-text"
+          >
+            <LogOut size={18} />
+            Log out
+          </button>
         </div>
       </aside>
     </>

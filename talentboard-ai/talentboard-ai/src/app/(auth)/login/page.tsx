@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,6 +14,14 @@ export default function LoginPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isGoogleSubmitting, setIsGoogleSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const msg = new URLSearchParams(window.location.search).get("message");
+      if (msg) setSuccessMessage(msg);
+    }
+  }, []);
 
   const redirectTo = getRedirectPath();
 
@@ -107,6 +115,12 @@ export default function LoginPage() {
         </div>
       </div>
 
+      {successMessage && (
+        <div className="mb-4 rounded-lg border border-success/20 bg-success-light/40 px-4 py-3 text-sm text-success">
+          {successMessage}
+        </div>
+      )}
+
       {error && (
         <div className="mb-4 rounded-lg border border-danger/20 bg-danger-light/40 px-4 py-3 text-sm text-danger">
           {error}
@@ -150,7 +164,7 @@ export default function LoginPage() {
             Remember me
           </label>
           <Link
-            href="#"
+            href="/forgot-password"
             className="text-sm font-medium text-primary hover:text-primary-hover"
           >
             Forgot password?
